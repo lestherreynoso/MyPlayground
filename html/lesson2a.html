@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            border: groove;
+        }
+        .classed{
+            background-color: #5bc0de;
+            font-size: larger;
+
+        }
+        #iddd{
+            text-align: center;
+            border: dotted;
+            border-bottom-color: orangered;
+            background-color: khaki;
+        }
+        p{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Here you will learn how to use the "internal" styling method as opposed to the "inline" method you used in lesson 1.
+        For the internal style you declare a style tag within the head of you document and all the <u>content</u> in that tag is written as <strong>css</strong>.
+        Some basic css selectors are
+        <em>tag</em>
+        .<em>class</em>
+        #<em>id</em>
+        Note the prefex before each selector. The italizized name is dependant on what you are tying to select.
+        But the prefix is used to differentiate between
+        an id a tag name and a class name
+    </pre>
+    <div class="classed">
+        This is a div element with a class named "classed"<br>
+        The divs with the "classed" class use this css<br>
+<pre>.classed{
+    background-color: #5bc0de;
+    font-size: larger;
+    }
+</pre>
+    </div>
+    <div id="iddd">
+        This is a div element with an id of "iddd"<br>
+<pre>#iddd{
+    text-align: center;
+    border: dotted;
+    border-bottom-color: orangered;
+    background-color: khaki;
+
+}
+</pre>
+    </div>
+    <div class="classed">
+        This too has been "classed
+    </div>
+    <p>
+        This is not a div just a p tag<br>
+        p{<br>
+        background-color: greenyellow;<br>
+        }
+    </p>
+    <div>
+        this is just a div no id or class. All the div elements share the same css<br>
+<pre><strong>div{
+        border:groove;
+    }</strong>
+</pre>
+    </div>
+</body>
+</html>
