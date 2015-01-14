@@ -70,6 +70,8 @@
                     <li>Lesson 2
                         <ul>
                             <li id="lesson2a"><a href="#">Lesson 2a</a></li>
+                            <li id="lesson2b"><a href="#">Lesson 2b</a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -97,23 +99,35 @@
     <script>
         $(document).ready(function(){
             $("#lesson1a").click(function(){
-                $("#bottom").html("<pre>In this lesson you will learn how to use the various header tags as well as the difference between a <strong>&lt;p&gt;</strong> tag a <strong>&lt;div&gt;</strong> tag and a <strong>&lt;pre&gt;</strong> tag</pre>" +
-                "<pre>You will also learn about the html <u>attributes</u> by implementing the <strong><em>style</em></strong> attribute to use the following <u>properties</u>\n<em>color</em>,\n<em>background-color</em>,\n<em>border</em>, and \n<em>border-color</em>\n</pre>" +
-                "<pre>You will also learn to create a link to another page using the <strong>&lt;a&gt;</strong> tag and the <strong><em>href</em></strong> attribute</pre> ");
+                $("#bottom").html(descriptions.lesson1a);
                 $("#demo").attr("src" ,"../html/lesson1a.html")
             });
             $("#lesson1b").click(function(){
-                $("#bottom").html("<pre>In this lesson you will learn how to use lists and tables using &lt;ul&gt; or &lt;ol&gt;, &lt;li&gt;, &lt;table&gt;, &lt;tr&gt;, and &lt;td&gt; </pre>");
+                $("#bottom").html(descriptions.lesson1b);
                 $("#demo").attr("src" ,"../html/lesson1b.html");
             });
             $("#lesson2a").click(function(){
-                $("#bottom").html("<pre>What you have done before is considered inline styling where you include the style for that element within the tag itself. \nNow you will learn to style your html elements using classes ids and tag names. " +
-                        "\nYou include css style script by using the &lt;style&gt; tag within the &lt;head&gt; tag of your html document"+
-                "\n<strong>Instructions:</strong> create four 'block' elements(meaning they look like actual blocks of content on the page) using what you learned \nfrom lesson 1a and give each a different method of identifying either the <em>id</em> or <em>class</em> attributes " +
-                "and call them in your css via id, class, or tag name</pre>");
+                $("#bottom").html(descriptions.lesson2a);
                 $("#demo").attr("src" ,"../html/lesson2a.html");
             });
-        })
+            $("#lesson2b").click(function(){
+                $("#bottom").html(descriptions.lesson2b);
+                $("#demo").attr("src" ,"../html/lesson2b.html");
+            });
+        });
+
+
+        var descriptions = {
+            "lesson1a": "<pre>In this lesson you will learn how to use the various header tags as well as the difference between a <strong>&lt;p&gt;</strong> tag a <strong>&lt;div&gt;</strong> tag and a <strong>&lt;pre&gt;</strong> tag</pre>" +
+                        "<pre>You will also learn about the html <u>attributes</u> by implementing the <strong><em>style</em></strong> attribute to use the following <u>properties</u>\n<em>color</em>,\n<em>background-color</em>,\n<em>border</em>, and \n<em>border-color</em>\n</pre>" +
+                        "<pre>You will also learn to create a link to another page using the <strong>&lt;a&gt;</strong> tag and the <strong><em>href</em></strong> attribute</pre> ",
+            "lesson1b": "<pre>In this lesson you will learn how to use lists and tables using &lt;ul&gt; or &lt;ol&gt;, &lt;li&gt;, &lt;table&gt;, &lt;tr&gt;, and &lt;td&gt; </pre>",
+            "lesson2a": "<pre>What you have done before is considered inline styling where you include the style for that element within the tag itself. \nNow you will learn to style your html elements using classes ids and tag names. " +
+                        "\nYou include css style script by using the &lt;style&gt; tag within the &lt;head&gt; tag of your html document"+
+                        "\n<strong>Instructions:</strong> create four 'block' elements(meaning they look like actual blocks of content on the page) using what you learned \nfrom lesson 1a and give each a different method of identifying either the <em>id</em> or <em>class</em> attributes " +
+                        "and call them in your css via id, class, or tag name</pre>",
+            "lesson2b": "<pre>Now that we know all about internal styling here is a challenge. Try to replication this.</pre>"
+        }
     </script>
     </body>
 </html>
